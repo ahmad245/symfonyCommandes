@@ -1,0 +1,23 @@
+composer create-project symfony/website-skeleton quiz
+
+php -S 127.0.0.1:8080 -t public
+php -S 192.168.1.17:8080 -t public
+
+ php bin/console make:controller QuestionController
+
+ php bin/console make:form QuestionType 
+php bin/console make:entity Question
+
+
+php bin/console debug:router
+
+php bin/console doctrine:database:create
+
+
+ npm run dev
+
+
+php bin/console make:migration
+
+php bin/console doctrine:migrations:migrate
+
